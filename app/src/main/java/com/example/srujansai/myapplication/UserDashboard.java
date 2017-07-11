@@ -26,9 +26,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.RemoteMessage;
 
+import org.json.JSONObject;
+
+import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class UserDashboard extends AppCompatActivity
@@ -43,18 +48,31 @@ public class UserDashboard extends AppCompatActivity
     RecyclerView frndlist;
     TextView selcon;
     SharedPreferences sharedPreferences;
+    RecyclerView tv;
     private static final int CONTACT_PICKER_RESULT = 1001;
     private static final String DEBUG_TAG = "Contact List";
     private static final int RESULT_OK = -1;
     String name,email,photo_url,uid,phno;
+    DatabaseReference myRef,childref,frnref;
+    FirebaseDatabase database;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_dashboard);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+       database = FirebaseDatabase.getInstance();
+       myRef = database.getReference();
+
+         //  store_userpro.put("phno",user_phno);
         sharedPreferences = getSharedPreferences("mypreference", Context.MODE_PRIVATE);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        uid=getIntent().getStringExtra("uid");
+        childref=myRef.child("Users").child(uid);
+
+
+                FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,30 +84,7 @@ public class UserDashboard extends AppCompatActivity
         addfrnd = (Button) findViewById(R.id.addfrnd);
         selcon = (TextView) findViewById(R.id.selectedcontact);
 
-        TelephonyManager tMgr = (TelephonyManager) UserDashboard.this.getSystemService(Context.TELEPHONY_SERVICE);
-        String mPhoneNumber = tMgr.getLine1Number();
-        String n = mPhoneNumber.replaceAll("[()\\s-]+", "").trim();
-        if (n.length() == 10) {
-            selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
-            phno=n;
-            FirebaseMessaging.getInstance().subscribeToTopic(n);
-            //jhjvjhv,jh
 
-        } else{
-
-            String num = n.substring(3);
-
-            if (num.length() == 10) {
-
-                selcon.setText("name :" + name + "\nPhone: " + num + "\nEmail:" + email);
-                phno=num;
-                FirebaseMessaging.getInstance().subscribeToTopic(num);
-            } else {
-                selcon.setText("name :" + name + "\nPhone: " + num + "\nEmail:" + email);
-                Toast.makeText(this, "Choose the 10 digit phone number you will not get notifications  "+num, Toast.LENGTH_SHORT).show();
-            }
-
-        }
 
 
 
@@ -239,24 +234,97 @@ public class UserDashboard extends AppCompatActivity
     private void setData(String name, String number, String email) {
       String n=number.replaceAll("[()\\s-]+", "").trim();
         if(n.length()==10){
+            String status="request_state";
         selcon.setText("name :"+name+"\nPhone: "+n+"\nEmail:"+email);
-            FirebaseMessaging fm = FirebaseMessaging.getInstance();
+            HashMap<String,String> friendslist=new HashMap<String,String>();
+            friendslist.put("fname",name);
+            friendslist.put("phno",n);
+            friendslist.put("status",status);
+            frnref=childref.child("friendslist").child(n);
+            frnref.setValue(friendslist);
+            Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
+
+           /* FirebaseMessaging fm = FirebaseMessaging.getInstance();
             AtomicInteger msgId=new AtomicInteger();;
             fm.send(new RemoteMessage.Builder(number)
                     .setMessageId(Integer.toString(msgId.incrementAndGet()))
                     .addData("my_message", "Hello World")
                     .addData("my_action","SAY_HELLO")
-                    .build());
-            //asdf
-        } else{
+                    .build());*/
 
-           String num= n.substring(3);
-            if(num.length() == 10){  selcon.setText("name :"+name+"\nPhone: "+num+"\nEmail:"+email); }else{
-                selcon.setText("name :"+name+"\nPhone: "+num+"\nEmail:"+email);
-                Toast.makeText(this, "Choose the 10 digit phone number", Toast.LENGTH_SHORT).show();
+            //
+        }else if (n.length ()>10 ) {
+            if (n.length() == 11) {
+                String num = n.substring(1);
+                String status = "request_state";
+                selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
+                HashMap<String, String> friendslist = new HashMap<String, String>();
+                friendslist.put("fname", name);
+                friendslist.put("phno", num);
+                friendslist.put("status", status);
+                frnref = childref.child("friendslist").child(num);
+                frnref.setValue(friendslist);
+                Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
+
+
+            } else if (n.length() == 12) {
+                String num = n.substring(2);
+                String status = "request_state";
+                selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
+                HashMap<String, String> friendslist = new HashMap<String, String>();
+                friendslist.put("fname", name);
+                friendslist.put("phno", num);
+                friendslist.put("status", status);
+                frnref = childref.child("friendslist").child(num);
+                frnref.setValue(friendslist);
+                Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
+
+
+            } else if (n.length() == 13) {
+                String num = n.substring(3);
+                String status = "request_state";
+                selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
+                HashMap<String, String> friendslist = new HashMap<String, String>();
+                friendslist.put("fname", name);
+                friendslist.put("phno", num);
+                friendslist.put("status", status);
+                frnref = childref.child("friendslist").child(num);
+                frnref.setValue(friendslist);
+                Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
+
+
             }
+        }
+        else {
+            Toast.makeText(this, "Choose the 10 digit phone number", Toast.LENGTH_SHORT).show();
 
         }
+        /* else if(n.length()==13){
+
+           String num= n.substring(3);
+            if(num.length() == 10){
+                selcon.setText("name :"+name+"\nPhone: "+num+"\nEmail:"+email);
+                String status="request_state";
+                HashMap<String,String> friendslist=new HashMap<String,String>();
+                friendslist.put("fname",name);
+                friendslist.put("phno",num);
+                friendslist.put("status",status);
+                frnref=childref.child("friendslist").child(num);
+                frnref.setValue(friendslist);
+                Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
+            }else  {
+
+
+
+
+                selcon.setText("name :"+name+"\nPhone: "+num+"\nEmail:"+email);
+
+                Toast.makeText(this, "Choose the 10 digit phone number", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
+            }
+
+        } */
         ///kljglh
     }
 }
