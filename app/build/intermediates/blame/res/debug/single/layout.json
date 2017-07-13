@@ -204,6 +204,10 @@
         "source": "C:\\Users\\srujan sai\\.android\\build-cache\\aead30e7761563a21960a25370b08b6a7b2206d4\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
+        "merged": "C:\\Users\\srujan sai\\AndroidStudioProjects\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frndrow.xml",
+        "source": "C:\\Users\\srujan sai\\AndroidStudioProjects\\MyApplication2\\app\\src\\main\\res\\layout\\frndrow.xml"
+    },
+    {
         "merged": "C:\\Users\\srujan sai\\AndroidStudioProjects\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_user_dashboard.xml",
         "source": "C:\\Users\\srujan sai\\AndroidStudioProjects\\MyApplication2\\app\\src\\main\\res\\layout\\nav_header_user_dashboard.xml"
     },

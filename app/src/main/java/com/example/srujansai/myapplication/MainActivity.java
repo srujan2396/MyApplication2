@@ -30,7 +30,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.messaging.FirebaseMessaging;
+
 
 import java.util.HashMap;
 
@@ -42,9 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     SharedPreferences sharedPreferences;
     GoogleSignInOptions gso;
     GoogleApiClient mGoogleApiClient;
-    int RC_SIGN_IN=9001;
+    int RC_SIGN_IN = 9001;
     SignInButton gsign;
     String phno;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -56,58 +57,68 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView t1, t2, un, pd;
         sharedPreferences = getSharedPreferences("mypreference", Context.MODE_PRIVATE);
         // Configure Google Sign In
-          gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
-        mGoogleApiClient= new GoogleApiClient.Builder(this)
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, this)
-                .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
+                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
-        gsign=(SignInButton)findViewById(R.id.gsign);
+        gsign = (SignInButton) findViewById(R.id.gsign);
         gsign.setOnClickListener(this);
-        TelephonyManager tMgr = (TelephonyManager) MainActivity.this.getSystemService(Context.TELEPHONY_SERVICE);
-        String mPhoneNumber = tMgr.getLine1Number();
-        String n = mPhoneNumber.replaceAll("[()\\s-]+", "").trim();
-        if (n.length() == 10) {
-
-            phno=n;
-            FirebaseMessaging.getInstance().subscribeToTopic(n);
-            //jhjvjhv,jh
-
-        } else{
-
-            String num = n.substring(3);
-
-            if (num.length() == 10) {
 
 
-                phno=num;
-                FirebaseMessaging.getInstance().subscribeToTopic(num);
-            } else {
 
-                Toast.makeText(this, "Choose the 10 digit phone number you will not get notifications  "+num, Toast.LENGTH_SHORT).show();
-            }
-
-        }
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
+
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                     Toast.makeText(MainActivity.this, "Already Signed in", Toast.LENGTH_SHORT).show();
+                    TelephonyManager tMgr = (TelephonyManager) MainActivity.this.getSystemService(Context.TELEPHONY_SERVICE);
+                    String mPhoneNumber = tMgr.getLine1Number();
+                    String n = mPhoneNumber.replaceAll("[()\\s-]+", "").trim();
+                    if (n.length() == 10) {
+
+                        phno = n;
+                       // FirebaseMessaging.getInstance().subscribeToTopic(n);
+                        //jhjvjhv,jh
+
+                    } else if (n.length() > 10) {
+                        if (n.length() == 11) {
+                            String num = n.substring(1);
+                            phno=num;
+
+                        } else if (n.length() == 12) {
+                            String num = n.substring(2);
+
+                            phno=num;
+
+                        } else if (n.length() == 13) {
+                            String num = n.substring(3);
+
+                            phno=num;
+
+                        }
+                    }
+
                     Intent i = new Intent(MainActivity.this, UserDashboard.class);
 
                     i.putExtra("name",user.getDisplayName());
                     i.putExtra("email",user.getEmail());
-                    i.putExtra("photourl",user.getPhotoUrl());
+                    i.putExtra("photourl",user.getPhotoUrl().toString());
+
+                    i.putExtra("phno",phno);
                     i.putExtra("uid",user.getUid());
                     startActivity(i);
+                    finish();
 
                 } else {
                     // User is signed out
@@ -167,7 +178,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             i.putExtra("name",user.getDisplayName());
                             i.putExtra("email",user.getEmail());
-                            i.putExtra("photourl",user.getPhotoUrl());
+                           // i.putExtra("photourl",user.getPhotoUrl());
                             i.putExtra("uid",user.getUid());
 
                             SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -177,18 +188,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             editor.putString("photourl",user.getPhotoUrl().toString());
 
                             editor.commit();
-                          FirebaseDatabase  database = FirebaseDatabase.getInstance();
-                           DatabaseReference myRef = database.getReference();
+                            FirebaseDatabase  database = FirebaseDatabase.getInstance();
+                            DatabaseReference myRef = database.getReference();
                             String user_name= user.getDisplayName();
                             String user_email= user.getEmail();
                             String photourl= user.getPhotoUrl().toString();
                             String user_phno=getIntent().getStringExtra("phno");
+
+
                             HashMap<String,String> store_userpro=new HashMap<String,String>();
                             store_userpro.put("name",user_name);
                             store_userpro.put("email",user_email);
                             store_userpro.put("photourl",photourl);
                             store_userpro.put("phno",phno);
-                          DatabaseReference childref= myRef.child("Users").child(user.getUid());
+                            DatabaseReference childref= myRef.child("Users").child(user.getUid());
                             childref.setValue(store_userpro);
                             Toast.makeText(MainActivity.this, "Authentication sucess",
                                     Toast.LENGTH_SHORT).show();

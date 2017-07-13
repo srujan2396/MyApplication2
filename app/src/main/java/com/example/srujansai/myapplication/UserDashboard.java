@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -26,14 +27,19 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.messaging.RemoteMessage;
+import com.google.firebase.database.Query;
+
 
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class UserDashboard extends AppCompatActivity
@@ -46,9 +52,13 @@ public class UserDashboard extends AppCompatActivity
     } */
     Button addfrnd;
     RecyclerView frndlist;
+    FriendlistAdapter fa;
+    LinearLayoutManager mlinear;
     TextView selcon;
     SharedPreferences sharedPreferences;
     RecyclerView tv;
+    String key;
+    List<Friend> mfrnds=new ArrayList<>();
     private static final int CONTACT_PICKER_RESULT = 1001;
     private static final String DEBUG_TAG = "Contact List";
     private static final int RESULT_OK = -1;
@@ -61,18 +71,20 @@ public class UserDashboard extends AppCompatActivity
         setContentView(R.layout.activity_user_dashboard);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+// Firebase database initialisation
        database = FirebaseDatabase.getInstance();
        myRef = database.getReference();
 
          //  store_userpro.put("phno",user_phno);
         sharedPreferences = getSharedPreferences("mypreference", Context.MODE_PRIVATE);
-
+///Getting firebase authentication user id from previous activity
         uid=getIntent().getStringExtra("uid");
+        phno=getIntent().getStringExtra("phno");
+        // below code mentioning path in Firebase Database
         childref=myRef.child("Users").child(uid);
 
 
-                FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -80,12 +92,72 @@ public class UserDashboard extends AppCompatActivity
                 startActivity(i);
             }
         });
-
+        //ui widgets initialisation
         addfrnd = (Button) findViewById(R.id.addfrnd);
         selcon = (TextView) findViewById(R.id.selectedcontact);
+        //Recycler view initialisation
+        tv=(RecyclerView)findViewById(R.id.frndslist);
+        tv.setHasFixedSize(true);
+        // for recycler view need layout manger object
+        mlinear=new LinearLayoutManager(UserDashboard.this);
+        // our Recycler list will display FIFO
+        mlinear.setReverseLayout(true);
+        mlinear.setStackFromEnd(true);
+        tv.setLayoutManager(mlinear);
+        // initialising Adapter object
+        fa=new FriendlistAdapter(this,mfrnds);
+        tv.setAdapter(fa);
+        DatabaseReference qfrnslist=childref.child("friendslist");
+        Query qr= qfrnslist.orderByValue();
+        qr.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                String fname=dataSnapshot.child("fname").getValue(String.class);
+                String phno=dataSnapshot.child("phno").getValue(String.class);
+                String status=dataSnapshot.child("status").getValue(String.class);
+                Friend f= new Friend(fname,phno,status);
+                mfrnds.add(f);
+                fa.notifyDataSetChanged();
+                System.out.println("uid: "+uid+" name :"+fname+" phno: "+" status: "+status);
+            }
 
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
+            }
 
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+/*        qr.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String fname=dataSnapshot.child("fname").getValue(String.class);
+                String phno=dataSnapshot.child("phno").getValue(String.class);
+                String status=dataSnapshot.child("status").getValue(String.class);
+                Friend f= new Friend(fname,phno,status);
+                mfrnds.add(f);
+                fa.notifyDataSetChanged();
+                System.out.println("uid: "+uid+" name :"+fname+" phno: "+" status: "+status);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });*/
 
 
 
@@ -234,7 +306,7 @@ public class UserDashboard extends AppCompatActivity
     private void setData(String name, String number, String email) {
       String n=number.replaceAll("[()\\s-]+", "").trim();
         if(n.length()==10){
-            String status="request_state";
+            String status="pending";
         selcon.setText("name :"+name+"\nPhone: "+n+"\nEmail:"+email);
             HashMap<String,String> friendslist=new HashMap<String,String>();
             friendslist.put("fname",name);
@@ -256,7 +328,7 @@ public class UserDashboard extends AppCompatActivity
         }else if (n.length ()>10 ) {
             if (n.length() == 11) {
                 String num = n.substring(1);
-                String status = "request_state";
+                String status="pending";
                 selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
                 HashMap<String, String> friendslist = new HashMap<String, String>();
                 friendslist.put("fname", name);
@@ -269,7 +341,7 @@ public class UserDashboard extends AppCompatActivity
 
             } else if (n.length() == 12) {
                 String num = n.substring(2);
-                String status = "request_state";
+                String status="pending";
                 selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
                 HashMap<String, String> friendslist = new HashMap<String, String>();
                 friendslist.put("fname", name);
@@ -282,7 +354,7 @@ public class UserDashboard extends AppCompatActivity
 
             } else if (n.length() == 13) {
                 String num = n.substring(3);
-                String status = "request_state";
+                String status="pending";
                 selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
                 HashMap<String, String> friendslist = new HashMap<String, String>();
                 friendslist.put("fname", name);
