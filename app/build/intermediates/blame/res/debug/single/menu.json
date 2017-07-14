@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\srujan sai\\AndroidStudioProjects\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_user_dashboard_drawer.xml",
-        "source": "C:\\Users\\srujan sai\\AndroidStudioProjects\\MyApplication2\\app\\src\\main\\res\\menu\\activity_user_dashboard_drawer.xml"
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\user_dashboard.xml",
+        "source": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\src\\main\\res\\menu\\user_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\srujan sai\\AndroidStudioProjects\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\user_dashboard.xml",
-        "source": "C:\\Users\\srujan sai\\AndroidStudioProjects\\MyApplication2\\app\\src\\main\\res\\menu\\user_dashboard.xml"
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_user_dashboard_drawer.xml",
+        "source": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\src\\main\\res\\menu\\activity_user_dashboard_drawer.xml"
     }
 ]

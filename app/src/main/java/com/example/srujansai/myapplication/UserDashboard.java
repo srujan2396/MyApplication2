@@ -113,9 +113,9 @@ public class UserDashboard extends AppCompatActivity
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 String fname=dataSnapshot.child("fname").getValue(String.class);
-                String phno=dataSnapshot.child("phno").getValue(String.class);
+                String fphno=dataSnapshot.child("phno").getValue(String.class);
                 String status=dataSnapshot.child("status").getValue(String.class);
-                Friend f= new Friend(fname,phno,status);
+                Friend f= new Friend(fname,fphno,status,phno);
                 mfrnds.add(f);
                 fa.notifyDataSetChanged();
                 System.out.println("uid: "+uid+" name :"+fname+" phno: "+" status: "+status);
@@ -337,7 +337,8 @@ public class UserDashboard extends AppCompatActivity
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);
                 Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
-
+                DatabaseReference nr=myRef.child("notificatiorequests").push();
+                nr.setValue(friendslist);
 
             } else if (n.length() == 12) {
                 String num = n.substring(2);
@@ -350,7 +351,8 @@ public class UserDashboard extends AppCompatActivity
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);
                 Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
-
+                DatabaseReference nr=myRef.child("notificatiorequests").push();
+                nr.setValue(friendslist);
 
             } else if (n.length() == 13) {
                 String num = n.substring(3);
@@ -363,7 +365,8 @@ public class UserDashboard extends AppCompatActivity
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);
                 Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
-
+                DatabaseReference nr=myRef.child("notificatiorequests").push();
+                nr.setValue(friendslist);
 
             }
         }

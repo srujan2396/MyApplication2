@@ -6,12 +6,21 @@ package com.example.srujansai.myapplication;
 
 public class Friend {
 
-    String fname,fphno,fstatus;
-    public Friend(String fname, String fphno, String fstatus){
+    String fname,fphno,fstatus,uphno;
+    public Friend(String fname, String fphno, String fstatus,String uphno){
         this.fname=fname;
         this.fphno=fphno;
         this.fstatus=fstatus;
+        this.uphno=uphno;
 
+    }
+
+    public String getUphno() {
+        return uphno;
+    }
+
+    public void setUphno(String uphno) {
+        this.uphno = uphno;
     }
 
     public String getFname() {

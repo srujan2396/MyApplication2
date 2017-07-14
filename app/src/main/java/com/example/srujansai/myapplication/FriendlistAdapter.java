@@ -81,7 +81,8 @@ public class FriendlistAdapter extends  RecyclerView.Adapter<FriendlistAdapter.M
                     if(fr.getFstatus().equals("accept")){
                     Intent in=new Intent(mContext,MapsActivity.class);
                     in.putExtra("name",fr.getFname());
-                    in.putExtra("phno",fr.getFphno());
+                    in.putExtra("fphno",fr.getFphno());
+                    in.putExtra("uphno",fr.getUphno());
                     mContext.startActivity(in);
                     }else {
                         Toast.makeText(mContext, " Selected Friend is not connected to you", Toast.LENGTH_SHORT).show();

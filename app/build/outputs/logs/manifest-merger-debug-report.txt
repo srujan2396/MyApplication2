@@ -1,363 +1,518 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:2:1-72:12
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:2:1-72:12
 	package
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:3:5-50
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:3:5-50
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
 uses-permission-sdk-23
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:4:1-81
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:4:1-81
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:4:25-79
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:4:25-79
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:9:5-72
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:9:5-72
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:9:22-69
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:9:22-69
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:10:5-74
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:10:5-74
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:10:22-72
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:10:22-72
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:11:5-68
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\srujan sai\.android\build-cache\86535e2bf1dfe473bea2decb6a510c550d616125\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:21:5-67
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:11:5-68
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7c1a3f4512d70ce8d33c71b0e97dd54d56b82fac\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\a52fdd4aec06ddd858576f92ad1a3854cf79ac38\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\13384ef117e5780fd975dd01cf1c4c31933a298f\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:11:22-65
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:11:22-65
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:12:5-82
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:22:5-81
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:12:5-82
+MERGED from [com.google.android.gms:play-services-gcm:10.0.1] C:\Users\teenhava\.android\build-cache\d955b22481b3336f3bf9e4a85fac2339b6cdc3b2\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:10.0.1] C:\Users\teenhava\.android\build-cache\3c07a0fbf3aa473a11830fae2cbe7fbbd71d2d55\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:12:22-79
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:12:22-79
 permission#your.package.name.permission.C2D_MESSAGE
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:13:5-111
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:13:5-111
 	android:protectionLevel
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:13:73-108
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:13:73-108
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:13:17-72
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:13:17-72
 uses-permission#your.package.name.permission.C2D_MESSAGE
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:14:5-80
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:14:5-80
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:14:22-77
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:14:22-77
 application
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:15:5-70:19
-MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\ce6fe073edb9daadcd888a78f3c45cce9eaa2723\output\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\srujan sai\.android\build-cache\8aaee6ec1e5d6a85bf552d8afbeb2bd0f8992b32\output\AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\srujan sai\.android\build-cache\f25c93bf7d83b43612dad09e877b33281e50dac7\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\srujan sai\.android\build-cache\55d3d0190c40c6df72315d88c956667898231163\output\AndroidManifest.xml:18:5-20:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\srujan sai\.android\build-cache\4cde5327475fc42818b772d25312a19649b5894f\output\AndroidManifest.xml:9:5-20
-MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\srujan sai\.android\build-cache\ae60fb221e08bfe9019706fb585de7f750efe8f4\output\AndroidManifest.xml:19:5-29:19
-MERGED from [com.android.support:design:25.3.1] C:\Users\srujan sai\.android\build-cache\bfe5c5b346f2c749e626be7ef0ee61582766ee52\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\srujan sai\.android\build-cache\aead30e7761563a21960a25370b08b6a7b2206d4\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\srujan sai\.android\build-cache\6738644276856c1227be374aead77fc918a167e3\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\srujan sai\.android\build-cache\178c750dd222be98d3914f5e64ef668fad5fade0\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\srujan sai\.android\build-cache\a4612774d9703acb9547a698df68fd83c4d97d2b\output\AndroidManifest.xml:26:5-20
-MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\srujan sai\.android\build-cache\af75d3aa9accdfeefbe1857a1b1a858cbbd4993c\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\srujan sai\.android\build-cache\86535e2bf1dfe473bea2decb6a510c550d616125\output\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:28:5-50:19
-MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\srujan sai\.android\build-cache\c01b0c4f94a92863dc8b9922a1197d3aa4daf9f3\output\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\srujan sai\.android\build-cache\e8811dba596e8ba55504c9abe3d48d8d654f9d88\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\srujan sai\.android\build-cache\ee1d57ca3119a9a0ff3ca38294905bef0616dfb7\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\srujan sai\.android\build-cache\5beee9a55624cddc396649d9d9cd96145d8a0e43\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\srujan sai\.android\build-cache\a436ff5add057570ba11e455fb85d0aa677aa738\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\srujan sai\.android\build-cache\6599965d90e05c8ddbaaafe808250f0608dac2d6\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\srujan sai\.android\build-cache\bd381f4025c21de8bef332ed6d93bb53686e5734\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\srujan sai\.android\build-cache\7cd8a14864f64c5fad5a058214a3d2c521fc69b4\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\srujan sai\.android\build-cache\eb53b8beedc05a503fcde9894037683f0dfc94e3\output\AndroidManifest.xml:29:5-20
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:15:5-70:19
+MERGED from [com.google.android.gms:play-services:10.0.1] C:\Users\teenhava\.android\build-cache\00f29ef1d43e721206b1910c60e9f2e8cd1ae529\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7c1a3f4512d70ce8d33c71b0e97dd54d56b82fac\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\teenhava\.android\build-cache\c96dc4fcbd7faab44cd3022052fd85ef4827346a\output\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:10.0.1] C:\Users\teenhava\.android\build-cache\38fc48768e49eca255da0a092afb892c230c8e68\output\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:24.0.0] C:\Users\teenhava\.android\build-cache\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:palette-v7:24.0.0] C:\Users\teenhava\.android\build-cache\27c86e844eeb7b89f585658f4165870039407f13\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\teenhava\.android\build-cache\6e2963f737cd1ce55e47963a422dcf4eeb0dba22\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:10.0.1] C:\Users\teenhava\.android\build-cache\246f78a2b630d7ea5d6022b2e97d3e661348f775\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:10.0.1] C:\Users\teenhava\.android\build-cache\b33059c9e8227028b4c2efb252306ea974b43594\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\teenhava\.android\build-cache\a88ae76719a2b764a933369aa3aaca361cf03d7a\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\teenhava\.android\build-cache\14b2376f71bd52d49c24e425eb045bbaf9c0b911\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-fitness:10.0.1] C:\Users\teenhava\.android\build-cache\de3d899dc48e1b4e210b5219390c3c6922d32e42\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:10.0.1] C:\Users\teenhava\.android\build-cache\84c62db34fbb379ea5d8fc01f74bccf07036dc2b\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:10.0.1] C:\Users\teenhava\.android\build-cache\974b7fe55416096a1c7f8beba0b37608328e26ac\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\teenhava\.android\build-cache\4ea9cf7e34d54e57ba4ba19fe84deeeccea2596a\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gcm:10.0.1] C:\Users\teenhava\.android\build-cache\d955b22481b3336f3bf9e4a85fac2339b6cdc3b2\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:10.0.1] C:\Users\teenhava\.android\build-cache\4f2bd7ea1dabc4eba5a0979547adef0b877de0bb\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:10.0.1] C:\Users\teenhava\.android\build-cache\3c07a0fbf3aa473a11830fae2cbe7fbbd71d2d55\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\teenhava\.android\build-cache\d9a624deff528c9a75fde40a1449f8b0c80afc2d\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-nearby:10.0.1] C:\Users\teenhava\.android\build-cache\59e9817a49abf24a7fd7dcca47244ffb2fef48bb\output\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:10.0.1] C:\Users\teenhava\.android\build-cache\b378034892f548b128419f8838f56b8a36d55e88\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:10.0.1] C:\Users\teenhava\.android\build-cache\1a97a0266ba594e6250ea74b39dd3cb2e2364a54\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:10.0.1] C:\Users\teenhava\.android\build-cache\a538eb7b1b5a5339df64d0de056cd92740ec1d73\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:10.0.1] C:\Users\teenhava\.android\build-cache\55a2300a9d1d9248c2d172f94a9ae5a750ab548d\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.1] C:\Users\teenhava\.android\build-cache\d33dfe13942352eb39179bb5340dcee404dd2c2e\output\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\a52fdd4aec06ddd858576f92ad1a3854cf79ac38\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-vision:10.0.1] C:\Users\teenhava\.android\build-cache\6b957e729d5f6bfccc22cdde0ddbc7123b971c5c\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:10.0.1] C:\Users\teenhava\.android\build-cache\0e1806b0cb22c644b3a99d91e48ac39fe4a3db4c\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\teenhava\.android\build-cache\7f2d65715cac92980923dbe4630766acb1c7f8c2\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-wearable:10.0.1] C:\Users\teenhava\.android\build-cache\f32af44ac0a2ac84f3cfb66fd79102c4a734bbff\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\teenhava\.android\build-cache\510e80362ac8bdc1beac9963e61a908f701e80ae\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\teenhava\.android\build-cache\d6cbea691811a23ae40a77ec7a54636506989f1f\output\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\teenhava\.android\build-cache\fea02c43db0ae4162abc7cce4edc378e2fcfd307\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\teenhava\.android\build-cache\395d7220279480a1570f0f95aa2caa13ab6b097c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\teenhava\.android\build-cache\09db6d461b22a498e296ec8f23f7e1f6ba4fd3d4\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\teenhava\.android\build-cache\e5d46497cc28536aa20ae442d564748f6a12c49c\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\teenhava\.android\build-cache\95a4347ba4a2136ec82a11d3739b0f9178d8d621\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\teenhava\.android\build-cache\02c3388cdd6eb846fd26111603c7c131b7c0a381\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\teenhava\.android\build-cache\23e1828266f2dfca262bdd50a2a0edd5bc7a6f74\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\13384ef117e5780fd975dd01cf1c4c31933a298f\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\teenhava\.android\build-cache\a8ba093878222fe89e8470331c631c2b678e91e9\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\teenhava\.android\build-cache\0b7e5844bcf7e5868ae538ded0d442156bd55dc3\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\teenhava\.android\build-cache\523e08800d009c973458a9b2b1bd1253d401440b\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\teenhava\.android\build-cache\9966807acd45cf703f4ed96c210a3d3b33235c95\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\teenhava\.android\build-cache\a2fea3b11e6300ee07ae49ccd0e9d3860ee9a217\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\teenhava\.android\build-cache\3ac81c2114cb0afddd382d083e819fcae4f36062\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\teenhava\.android\build-cache\f7010b99cc3fbb0dd4718cfdf33087599ccc71a3\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\teenhava\.android\build-cache\0d39a523839a3f36328e2388952249fe4ae07ceb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\teenhava\.android\build-cache\ea49131b1b66c3cc3aed88a984c5215fe68d2a51\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:18:9-41
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:18:9-41
 	android:supportsRtl
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:20:9-35
 	android:roundIcon
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:19:9-54
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:19:9-54
 	android:allowBackup
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:16:9-35
 	android:icon
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:17:9-43
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:17:9-43
 	android:theme
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:21:9-40
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:21:9-40
 activity#com.example.srujansai.myapplication.MainActivity
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:22:9-28:20
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:22:9-28:20
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:22:19-47
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:22:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:26:27-74
 activity#com.example.srujansai.myapplication.UserDashboard
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:29:9-32:59
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:29:9-32:59
 	android:theme
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:32:13-56
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:32:13-56
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:30:13-42
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:30:13-42
 activity#com.example.srujansai.myapplication.MapsActivity
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:33:9-35:20
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:33:9-35:20
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:33:19-47
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:33:19-47
 receiver#com.example.srujansai.myapplication.GcmBroadcastReceiver
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:44:9-51:20
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:44:9-51:20
 	android:permission
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:46:13-73
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:46:13-73
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:45:13-49
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:45:13-49
 intent-filter#com.google.android.c2dm.intent.RECEIVE+your.package.name
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:47:13-50:29
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:47:13-50:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:48:17-81
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:48:17-81
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:48:25-78
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:48:25-78
 category#your.package.name
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:49:17-62
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:49:17-62
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:49:27-59
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:49:27-59
 service#com.example.srujansai.myapplication.GcmIntentService
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:52:9-53
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:52:9-53
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:52:18-50
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:52:18-50
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:53:9-54:69
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\srujan sai\.android\build-cache\ee1d57ca3119a9a0ff3ca38294905bef0616dfb7\output\AndroidManifest.xml:20:9-121
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:53:9-54:69
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\teenhava\.android\build-cache\523e08800d009c973458a9b2b1bd1253d401440b\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:54:13-66
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:54:13-66
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:53:20-65
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:53:20-65
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:55:9-57:68
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:55:9-57:68
 	android:resource
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:57:13-65
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:57:13-65
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:56:13-83
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:56:13-83
 meta-data#com.google.firebase.messaging.default_notification_color
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:60:9-62:53
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:60:9-62:53
 	android:resource
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:62:13-50
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:62:13-50
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:61:13-84
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:61:13-84
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:67:9-69:70
+ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:67:9-69:70
 	android:value
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:69:13-68
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:69:13-68
 	android:name
-		ADDED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:68:13-58
+		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:68:13-58
 uses-sdk
-INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\ce6fe073edb9daadcd888a78f3c45cce9eaa2723\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-auth-base:10.0.1] C:\Users\srujan sai\.android\build-cache\c25dd854adce8a5eb1fcef6b1d2124eb3e2ece86\output\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\srujan sai\.android\build-cache\8aaee6ec1e5d6a85bf552d8afbeb2bd0f8992b32\output\AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\srujan sai\.android\build-cache\f25c93bf7d83b43612dad09e877b33281e50dac7\output\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\srujan sai\.android\build-cache\55d3d0190c40c6df72315d88c956667898231163\output\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\srujan sai\.android\build-cache\4cde5327475fc42818b772d25312a19649b5894f\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\srujan sai\.android\build-cache\1fa4f5b5472ac4a7b995aa6ebb401a257507ed76\output\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\srujan sai\.android\build-cache\843aa202d0f19dfa7b0bb4652ed484524e91aa6c\output\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\srujan sai\.android\build-cache\ae60fb221e08bfe9019706fb585de7f750efe8f4\output\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:design:25.3.1] C:\Users\srujan sai\.android\build-cache\bfe5c5b346f2c749e626be7ef0ee61582766ee52\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\srujan sai\.android\build-cache\aead30e7761563a21960a25370b08b6a7b2206d4\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\srujan sai\.android\build-cache\6738644276856c1227be374aead77fc918a167e3\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\srujan sai\.android\build-cache\178c750dd222be98d3914f5e64ef668fad5fade0\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\srujan sai\.android\build-cache\de005a19db202d5cc58429e6042930064c7a16f9\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\srujan sai\.android\build-cache\a4612774d9703acb9547a698df68fd83c4d97d2b\output\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\srujan sai\.android\build-cache\af75d3aa9accdfeefbe1857a1b1a858cbbd4993c\output\AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\srujan sai\.android\build-cache\86535e2bf1dfe473bea2decb6a510c550d616125\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\srujan sai\.android\build-cache\c01b0c4f94a92863dc8b9922a1197d3aa4daf9f3\output\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\srujan sai\.android\build-cache\e8811dba596e8ba55504c9abe3d48d8d654f9d88\output\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\srujan sai\.android\build-cache\ee1d57ca3119a9a0ff3ca38294905bef0616dfb7\output\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\srujan sai\.android\build-cache\5beee9a55624cddc396649d9d9cd96145d8a0e43\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\srujan sai\.android\build-cache\a436ff5add057570ba11e455fb85d0aa677aa738\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\srujan sai\.android\build-cache\6599965d90e05c8ddbaaafe808250f0608dac2d6\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\srujan sai\.android\build-cache\bd381f4025c21de8bef332ed6d93bb53686e5734\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\srujan sai\.android\build-cache\7cd8a14864f64c5fad5a058214a3d2c521fc69b4\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\srujan sai\.android\build-cache\eb53b8beedc05a503fcde9894037683f0dfc94e3\output\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.android.gms:play-services:10.0.1] C:\Users\teenhava\.android\build-cache\00f29ef1d43e721206b1910c60e9f2e8cd1ae529\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-ads:10.0.1] C:\Users\teenhava\.android\build-cache\10dea0a8de4e10156e8e43b22b0b53bca241867a\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7c1a3f4512d70ce8d33c71b0e97dd54d56b82fac\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:10.0.1] C:\Users\teenhava\.android\build-cache\07dae2aecc55942f63e1360c11bd3eca31c4d87e\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\teenhava\.android\build-cache\c96dc4fcbd7faab44cd3022052fd85ef4827346a\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-cast:10.0.1] C:\Users\teenhava\.android\build-cache\38fc48768e49eca255da0a092afb892c230c8e68\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:mediarouter-v7:24.0.0] C:\Users\teenhava\.android\build-cache\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:24.0.0] C:\Users\teenhava\.android\build-cache\27c86e844eeb7b89f585658f4165870039407f13\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.1] C:\Users\teenhava\.android\build-cache\6e2963f737cd1ce55e47963a422dcf4eeb0dba22\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-config:10.0.1] C:\Users\teenhava\.android\build-cache\246f78a2b630d7ea5d6022b2e97d3e661348f775\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-awareness:10.0.1] C:\Users\teenhava\.android\build-cache\b33059c9e8227028b4c2efb252306ea974b43594\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\teenhava\.android\build-cache\a88ae76719a2b764a933369aa3aaca361cf03d7a\output\AndroidManifest.xml:20:5-42
+MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\teenhava\.android\build-cache\14b2376f71bd52d49c24e425eb045bbaf9c0b911\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-storage:10.0.1] C:\Users\teenhava\.android\build-cache\fc35749cdd8c1fd2a8efcc267bc45e6c79b265f9\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage-common:10.0.1] C:\Users\teenhava\.android\build-cache\9206cf670ce079c0f1b5ba4af57f8c8951af8f41\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-fitness:10.0.1] C:\Users\teenhava\.android\build-cache\de3d899dc48e1b4e210b5219390c3c6922d32e42\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-games:10.0.1] C:\Users\teenhava\.android\build-cache\84c62db34fbb379ea5d8fc01f74bccf07036dc2b\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-drive:10.0.1] C:\Users\teenhava\.android\build-cache\974b7fe55416096a1c7f8beba0b37608328e26ac\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-gass:10.0.1] C:\Users\teenhava\.android\build-cache\4ea9cf7e34d54e57ba4ba19fe84deeeccea2596a\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-gcm:10.0.1] C:\Users\teenhava\.android\build-cache\d955b22481b3336f3bf9e4a85fac2339b6cdc3b2\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-appindexing:10.0.1] C:\Users\teenhava\.android\build-cache\4f2bd7ea1dabc4eba5a0979547adef0b877de0bb\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-iid:10.0.1] C:\Users\teenhava\.android\build-cache\3c07a0fbf3aa473a11830fae2cbe7fbbd71d2d55\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-instantapps:10.0.1] C:\Users\teenhava\.android\build-cache\0d1a3ef2a6c5ba8f870f07c595e2071007bc56c1\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-location:10.0.1] C:\Users\teenhava\.android\build-cache\d9a624deff528c9a75fde40a1449f8b0c80afc2d\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-nearby:10.0.1] C:\Users\teenhava\.android\build-cache\59e9817a49abf24a7fd7dcca47244ffb2fef48bb\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-panorama:10.0.1] C:\Users\teenhava\.android\build-cache\b378034892f548b128419f8838f56b8a36d55e88\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-places:10.0.1] C:\Users\teenhava\.android\build-cache\1a97a0266ba594e6250ea74b39dd3cb2e2364a54\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-plus:10.0.1] C:\Users\teenhava\.android\build-cache\a538eb7b1b5a5339df64d0de056cd92740ec1d73\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:10.0.1] C:\Users\teenhava\.android\build-cache\55a2300a9d1d9248c2d172f94a9ae5a750ab548d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager:10.0.1] C:\Users\teenhava\.android\build-cache\f8e42e23469aa6ba73f465d6f50a5b031bfe0cad\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.1] C:\Users\teenhava\.android\build-cache\d33dfe13942352eb39179bb5340dcee404dd2c2e\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\a52fdd4aec06ddd858576f92ad1a3854cf79ac38\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-vision:10.0.1] C:\Users\teenhava\.android\build-cache\6b957e729d5f6bfccc22cdde0ddbc7123b971c5c\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-wallet:10.0.1] C:\Users\teenhava\.android\build-cache\2f1778a0089bcf52a7859a1b9d9cf3553e3fd6b0\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-identity:10.0.1] C:\Users\teenhava\.android\build-cache\0e1806b0cb22c644b3a99d91e48ac39fe4a3db4c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\teenhava\.android\build-cache\7f2d65715cac92980923dbe4630766acb1c7f8c2\output\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-wearable:10.0.1] C:\Users\teenhava\.android\build-cache\f32af44ac0a2ac84f3cfb66fd79102c4a734bbff\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\teenhava\.android\build-cache\510e80362ac8bdc1beac9963e61a908f701e80ae\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\teenhava\.android\build-cache\d6cbea691811a23ae40a77ec7a54636506989f1f\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\teenhava\.android\build-cache\6495dc81f5150cdf3599a5cd71337b44b3accf82\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\teenhava\.android\build-cache\7ac62ffd20574cfafce897cc4f580277dbfb27b6\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\teenhava\.android\build-cache\fea02c43db0ae4162abc7cce4edc378e2fcfd307\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:design:25.3.1] C:\Users\teenhava\.android\build-cache\395d7220279480a1570f0f95aa2caa13ab6b097c\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\teenhava\.android\build-cache\09db6d461b22a498e296ec8f23f7e1f6ba4fd3d4\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\teenhava\.android\build-cache\e5d46497cc28536aa20ae442d564748f6a12c49c\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\teenhava\.android\build-cache\95a4347ba4a2136ec82a11d3739b0f9178d8d621\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\teenhava\.android\build-cache\5c3a48c1e3597f82b5b6714d103dd9332f01e839\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\teenhava\.android\build-cache\02c3388cdd6eb846fd26111603c7c131b7c0a381\output\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\teenhava\.android\build-cache\23e1828266f2dfca262bdd50a2a0edd5bc7a6f74\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\13384ef117e5780fd975dd01cf1c4c31933a298f\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\teenhava\.android\build-cache\a8ba093878222fe89e8470331c631c2b678e91e9\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\teenhava\.android\build-cache\0b7e5844bcf7e5868ae538ded0d442156bd55dc3\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\teenhava\.android\build-cache\523e08800d009c973458a9b2b1bd1253d401440b\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\teenhava\.android\build-cache\9966807acd45cf703f4ed96c210a3d3b33235c95\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\teenhava\.android\build-cache\a2fea3b11e6300ee07ae49ccd0e9d3860ee9a217\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\teenhava\.android\build-cache\3ac81c2114cb0afddd382d083e819fcae4f36062\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\teenhava\.android\build-cache\f7010b99cc3fbb0dd4718cfdf33087599ccc71a3\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\teenhava\.android\build-cache\0d39a523839a3f36328e2388952249fe4ae07ceb\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\teenhava\.android\build-cache\ea49131b1b66c3cc3aed88a984c5215fe68d2a51\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\srujan sai\.android\build-cache\bfe5c5b346f2c749e626be7ef0ee61582766ee52\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] C:\Users\teenhava\.android\build-cache\395d7220279480a1570f0f95aa2caa13ab6b097c\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\srujan sai\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:20:9-189
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:20:129-162
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:20:163-187
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:20:69-128
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:20:19-68
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:24:9-184
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:24:64-87
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:24:88-182
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\srujan sai\.android\build-cache\8ce5ec97b9df9912342b064cccba7a4610f63d53\output\AndroidManifest.xml:24:18-63
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\srujan sai\.android\build-cache\8aaee6ec1e5d6a85bf552d8afbeb2bd0f8992b32\output\AndroidManifest.xml:19:5-78
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\srujan sai\.android\build-cache\86535e2bf1dfe473bea2decb6a510c550d616125\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:19:5-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\srujan sai\.android\build-cache\8aaee6ec1e5d6a85bf552d8afbeb2bd0f8992b32\output\AndroidManifest.xml:19:22-76
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\srujan sai\.android\build-cache\8aaee6ec1e5d6a85bf552d8afbeb2bd0f8992b32\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\srujan sai\.android\build-cache\86535e2bf1dfe473bea2decb6a510c550d616125\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:20:5-66
+ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7c1a3f4512d70ce8d33c71b0e97dd54d56b82fac\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\teenhava\.android\build-cache\a88ae76719a2b764a933369aa3aaca361cf03d7a\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:10.0.1] C:\Users\teenhava\.android\build-cache\d955b22481b3336f3bf9e4a85fac2339b6cdc3b2\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:10.0.1] C:\Users\teenhava\.android\build-cache\3c07a0fbf3aa473a11830fae2cbe7fbbd71d2d55\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\a52fdd4aec06ddd858576f92ad1a3854cf79ac38\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\teenhava\.android\build-cache\7f2d65715cac92980923dbe4630766acb1c7f8c2\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\13384ef117e5780fd975dd01cf1c4c31933a298f\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\srujan sai\.android\build-cache\8aaee6ec1e5d6a85bf552d8afbeb2bd0f8992b32\output\AndroidManifest.xml:20:22-64
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\srujan sai\.android\build-cache\8aaee6ec1e5d6a85bf552d8afbeb2bd0f8992b32\output\AndroidManifest.xml:21:5-77
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\srujan sai\.android\build-cache\8aaee6ec1e5d6a85bf552d8afbeb2bd0f8992b32\output\AndroidManifest.xml:21:19-51
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\srujan sai\.android\build-cache\8aaee6ec1e5d6a85bf552d8afbeb2bd0f8992b32\output\AndroidManifest.xml:21:52-75
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\srujan sai\.android\build-cache\55d3d0190c40c6df72315d88c956667898231163\output\AndroidManifest.xml:19:9-172
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\srujan sai\.android\build-cache\55d3d0190c40c6df72315d88c956667898231163\output\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:19:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7c1a3f4512d70ce8d33c71b0e97dd54d56b82fac\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:10.0.1] C:\Users\teenhava\.android\build-cache\59e9817a49abf24a7fd7dcca47244ffb2fef48bb\output\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\a52fdd4aec06ddd858576f92ad1a3854cf79ac38\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\teenhava\.android\build-cache\7f2d65715cac92980923dbe4630766acb1c7f8c2\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\13384ef117e5780fd975dd01cf1c4c31933a298f\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:20:22-76
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:25:72-181
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\srujan sai\.android\build-cache\55d3d0190c40c6df72315d88c956667898231163\output\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:25:182-230
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\srujan sai\.android\build-cache\55d3d0190c40c6df72315d88c956667898231163\output\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:25:19-71
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.1] C:\Users\teenhava\.android\build-cache\de70b221f826b87c1a59f41e560863abc253be7e\output\AndroidManifest.xml:26:19-91
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:20:19-50
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:22:25-87
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:23:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\teenhava\.android\build-cache\d7db3425e6c5563e7ec7388aa04020fb7670f4a6\output\AndroidManifest.xml:23:27-73
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.0.1] C:\Users\teenhava\.android\build-cache\2633dcecd021bf1f3b264efa29792fd8f0f7c64d\output\AndroidManifest.xml:24:18-63
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\teenhava\.android\build-cache\c96dc4fcbd7faab44cd3022052fd85ef4827346a\output\AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\teenhava\.android\build-cache\c96dc4fcbd7faab44cd3022052fd85ef4827346a\output\AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\teenhava\.android\build-cache\c96dc4fcbd7faab44cd3022052fd85ef4827346a\output\AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\teenhava\.android\build-cache\c96dc4fcbd7faab44cd3022052fd85ef4827346a\output\AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\teenhava\.android\build-cache\c96dc4fcbd7faab44cd3022052fd85ef4827346a\output\AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.0.1] C:\Users\teenhava\.android\build-cache\c96dc4fcbd7faab44cd3022052fd85ef4827346a\output\AndroidManifest.xml:7:18-90
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:25:9-32:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:25:94-118
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:25:19-93
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:26:13-31:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:27:17-71
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:27:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:28:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.1] C:\Users\teenhava\.android\build-cache\3fc6eddc67a0d6a094dd682e85fc305fcb78854c\output\AndroidManifest.xml:30:27-75
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\teenhava\.android\build-cache\7f2d65715cac92980923dbe4630766acb1c7f8c2\output\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\teenhava\.android\build-cache\7f2d65715cac92980923dbe4630766acb1c7f8c2\output\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\teenhava\.android\build-cache\7f2d65715cac92980923dbe4630766acb1c7f8c2\output\AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\teenhava\.android\build-cache\510e80362ac8bdc1beac9963e61a908f701e80ae\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\teenhava\.android\build-cache\510e80362ac8bdc1beac9963e61a908f701e80ae\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\teenhava\.android\build-cache\510e80362ac8bdc1beac9963e61a908f701e80ae\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\teenhava\.android\build-cache\510e80362ac8bdc1beac9963e61a908f701e80ae\output\AndroidManifest.xml:19:19-85
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\srujan sai\.android\build-cache\ae60fb221e08bfe9019706fb585de7f750efe8f4\output\AndroidManifest.xml:23:9-27:19
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\teenhava\.android\build-cache\fea02c43db0ae4162abc7cce4edc378e2fcfd307\output\AndroidManifest.xml:23:9-27:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\srujan sai\.android\build-cache\ae60fb221e08bfe9019706fb585de7f750efe8f4\output\AndroidManifest.xml:23:88-111
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\teenhava\.android\build-cache\fea02c43db0ae4162abc7cce4edc378e2fcfd307\output\AndroidManifest.xml:23:88-111
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\srujan sai\.android\build-cache\ae60fb221e08bfe9019706fb585de7f750efe8f4\output\AndroidManifest.xml:23:18-87
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\teenhava\.android\build-cache\fea02c43db0ae4162abc7cce4edc378e2fcfd307\output\AndroidManifest.xml:23:18-87
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\srujan sai\.android\build-cache\ae60fb221e08bfe9019706fb585de7f750efe8f4\output\AndroidManifest.xml:24:13-26:29
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\teenhava\.android\build-cache\fea02c43db0ae4162abc7cce4edc378e2fcfd307\output\AndroidManifest.xml:24:13-26:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\srujan sai\.android\build-cache\ae60fb221e08bfe9019706fb585de7f750efe8f4\output\AndroidManifest.xml:24:28-51
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\teenhava\.android\build-cache\fea02c43db0ae4162abc7cce4edc378e2fcfd307\output\AndroidManifest.xml:24:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\srujan sai\.android\build-cache\ae60fb221e08bfe9019706fb585de7f750efe8f4\output\AndroidManifest.xml:25:17-77
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\teenhava\.android\build-cache\fea02c43db0ae4162abc7cce4edc378e2fcfd307\output\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\srujan sai\.android\build-cache\ae60fb221e08bfe9019706fb585de7f750efe8f4\output\AndroidManifest.xml:25:25-75
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\teenhava\.android\build-cache\fea02c43db0ae4162abc7cce4edc378e2fcfd307\output\AndroidManifest.xml:25:25-75
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\srujan sai\.android\build-cache\bfe5c5b346f2c749e626be7ef0ee61582766ee52\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\srujan sai\.android\build-cache\aead30e7761563a21960a25370b08b6a7b2206d4\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\srujan sai\.android\build-cache\6738644276856c1227be374aead77fc918a167e3\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\srujan sai\.android\build-cache\178c750dd222be98d3914f5e64ef668fad5fade0\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\srujan sai\.android\build-cache\de005a19db202d5cc58429e6042930064c7a16f9\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\srujan sai\.android\build-cache\a4612774d9703acb9547a698df68fd83c4d97d2b\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\srujan sai\.android\build-cache\5beee9a55624cddc396649d9d9cd96145d8a0e43\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\srujan sai\.android\build-cache\a436ff5add057570ba11e455fb85d0aa677aa738\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\srujan sai\.android\build-cache\6599965d90e05c8ddbaaafe808250f0608dac2d6\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\srujan sai\.android\build-cache\bd381f4025c21de8bef332ed6d93bb53686e5734\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\srujan sai\.android\build-cache\7cd8a14864f64c5fad5a058214a3d2c521fc69b4\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\srujan sai\.android\build-cache\eb53b8beedc05a503fcde9894037683f0dfc94e3\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\teenhava\.android\build-cache\395d7220279480a1570f0f95aa2caa13ab6b097c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\teenhava\.android\build-cache\09db6d461b22a498e296ec8f23f7e1f6ba4fd3d4\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\teenhava\.android\build-cache\e5d46497cc28536aa20ae442d564748f6a12c49c\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\teenhava\.android\build-cache\95a4347ba4a2136ec82a11d3739b0f9178d8d621\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\teenhava\.android\build-cache\5c3a48c1e3597f82b5b6714d103dd9332f01e839\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\teenhava\.android\build-cache\02c3388cdd6eb846fd26111603c7c131b7c0a381\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\teenhava\.android\build-cache\9966807acd45cf703f4ed96c210a3d3b33235c95\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\teenhava\.android\build-cache\a2fea3b11e6300ee07ae49ccd0e9d3860ee9a217\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\teenhava\.android\build-cache\3ac81c2114cb0afddd382d083e819fcae4f36062\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\teenhava\.android\build-cache\f7010b99cc3fbb0dd4718cfdf33087599ccc71a3\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\teenhava\.android\build-cache\0d39a523839a3f36328e2388952249fe4ae07ceb\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\teenhava\.android\build-cache\ea49131b1b66c3cc3aed88a984c5215fe68d2a51\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\srujan sai\.android\build-cache\bfe5c5b346f2c749e626be7ef0ee61582766ee52\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\teenhava\.android\build-cache\395d7220279480a1570f0f95aa2caa13ab6b097c\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\srujan sai\.android\build-cache\bfe5c5b346f2c749e626be7ef0ee61582766ee52\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\teenhava\.android\build-cache\395d7220279480a1570f0f95aa2caa13ab6b097c\output\AndroidManifest.xml:26:9-47
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\srujan sai\.android\build-cache\86535e2bf1dfe473bea2decb6a510c550d616125\output\AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\13384ef117e5780fd975dd01cf1c4c31933a298f\output\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:27:162-184
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\srujan sai\.android\build-cache\86535e2bf1dfe473bea2decb6a510c550d616125\output\AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\teenhava\.android\build-cache\13384ef117e5780fd975dd01cf1c4c31933a298f\output\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\srujan sai\.android\build-cache\4ec32d1ace7c245aa495140d9b802eed2754eb5c\output\AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\teenhava\.android\build-cache\7b14bfc8c2059f2d9bf111a9f5e02977f0d5a2c0\output\AndroidManifest.xml:32:16-87
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:30:9-36:20
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:30:9-36:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:31:13-35:29
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:31:13-35:29
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:33:17-85
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:33:17-85
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:33:25-83
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:33:25-83
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:34:17-60
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:34:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:34:27-58
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:34:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:40:9-119
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:40:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:40:93-117
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:40:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:40:19-92
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:40:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:44:9-48:19
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:44:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:44:83-106
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:44:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:44:18-82
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:44:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:45:13-47:29
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:45:13-47:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:45:28-51
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:45:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:46:17-79
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:46:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\srujan sai\.android\build-cache\fe9abe8a31e4dcdc51bdf14735073a736a959b94\output\AndroidManifest.xml:46:25-77
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\teenhava\.android\build-cache\84c0b367d0927155f6890c07340b8a582ecd92a9\output\AndroidManifest.xml:46:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\srujan sai\.android\build-cache\c01b0c4f94a92863dc8b9922a1197d3aa4daf9f3\output\AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\teenhava\.android\build-cache\a8ba093878222fe89e8470331c631c2b678e91e9\output\AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\srujan sai\.android\build-cache\c01b0c4f94a92863dc8b9922a1197d3aa4daf9f3\output\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\teenhava\.android\build-cache\a8ba093878222fe89e8470331c631c2b678e91e9\output\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\srujan sai\.android\build-cache\c01b0c4f94a92863dc8b9922a1197d3aa4daf9f3\output\AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\teenhava\.android\build-cache\a8ba093878222fe89e8470331c631c2b678e91e9\output\AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\srujan sai\.android\build-cache\c01b0c4f94a92863dc8b9922a1197d3aa4daf9f3\output\AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\teenhava\.android\build-cache\a8ba093878222fe89e8470331c631c2b678e91e9\output\AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\srujan sai\.android\build-cache\c01b0c4f94a92863dc8b9922a1197d3aa4daf9f3\output\AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\teenhava\.android\build-cache\a8ba093878222fe89e8470331c631c2b678e91e9\output\AndroidManifest.xml:6:79-143
