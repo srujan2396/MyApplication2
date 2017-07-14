@@ -126,7 +126,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void status(PubNub pubnub, PNStatus status) {
                 if (status.getCategory() == PNStatusCategory.PNUnknownCategory) {
                     System.out.println(status.getErrorData());
-
+//afgasdfasdfasdf
                 }
             }
 
