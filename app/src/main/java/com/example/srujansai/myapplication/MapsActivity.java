@@ -126,6 +126,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void status(PubNub pubnub, PNStatus status) {
                 if (status.getCategory() == PNStatusCategory.PNUnknownCategory) {
                     System.out.println(status.getErrorData());
+
                 }
             }
 
@@ -133,6 +134,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void message(PubNub pubnub, PNMessageResult message) {
                 JsonElement msg = message.getMessage();
                 System.out.println(msg);
+                //asdfasdfasd
 
 
             }
