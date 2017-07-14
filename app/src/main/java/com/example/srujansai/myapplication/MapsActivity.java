@@ -134,7 +134,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void message(PubNub pubnub, PNMessageResult message) {
                 JsonElement msg = message.getMessage();
                 System.out.println(msg);
-                //asdfasdfasd
+                //asdfasdfasdasdfasdfasdfawsdf
 
 
             }
