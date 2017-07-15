@@ -33,6 +33,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 
 import org.json.JSONObject;
@@ -107,6 +108,7 @@ public class UserDashboard extends AppCompatActivity
         // initialising Adapter object
         fa=new FriendlistAdapter(this,mfrnds);
         tv.setAdapter(fa);
+        FirebaseMessaging.getInstance().subscribeToTopic("TRACKO_"+phno);
         DatabaseReference qfrnslist=childref.child("friendslist");
         Query qr= qfrnslist.orderByValue();
         qr.addChildEventListener(new ChildEventListener() {
