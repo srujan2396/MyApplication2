@@ -62,14 +62,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.srujansai.myapplication.MapsActivity" >
         </activity>
-        <!--
-            <service
-            android:name=".MyFirebaseMessagingService">
+
+        <service android:name="com.example.srujansai.myapplication.MyFirebaseMessagingService" >
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        -->
 
         <receiver
             android:name="com.example.srujansai.myapplication.GcmBroadcastReceiver"
@@ -102,6 +100,11 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA7kCWbqawY3zoK3BySovBpMpZH5mCTmLQ" />
+
+        <service android:name="com.example.srujansai.myapplication.GeofenceTrasitionService" >
+        </service>
+        <service android:name="com.example.srujansai.myapplication.FetchAddressIntentService" >
+        </service>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

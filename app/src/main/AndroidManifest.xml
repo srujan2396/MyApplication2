@@ -33,13 +33,12 @@
         <activity android:name=".MapsActivity">
 
         </activity>
-  <!--      <service
+        <service
             android:name=".MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-    -->
 
         <receiver
             android:name=".GcmBroadcastReceiver"
@@ -67,6 +66,12 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA7kCWbqawY3zoK3BySovBpMpZH5mCTmLQ"/>
+        <service android:name=".GeofenceTrasitionService">
+
+        </service>
+        <service android:name=".FetchAddressIntentService">
+
+        </service>
     </application>
 
 </manifest>
