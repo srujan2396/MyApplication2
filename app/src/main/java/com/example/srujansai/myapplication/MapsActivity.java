@@ -468,6 +468,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         googleMap.setPadding(0, 0, 30, 105);
 
         enableMyLocation();
+        startGeofence();
         mPolylineOptions = new PolylineOptions();
         mPolylineOptions.color(Color.BLUE).width(10);
 
@@ -750,7 +751,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 public static Intent makeNotificationIntent(Context applicationContext, String msg) {
    Intent intent = new Intent(applicationContext,MapsActivity.class);
-    intent.putExtra("NOTIFICATION MSGl",msg);
+    intent.putExtra("NOTIFICATION MSG",msg);
     return intent;
 }
 

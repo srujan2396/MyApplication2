@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">TraackO</string>
     <string name="title_activity_user_dashboard">UserDashboard</string>
     <string name="hello_world">search_title</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

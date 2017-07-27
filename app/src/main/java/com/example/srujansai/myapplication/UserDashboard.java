@@ -81,6 +81,7 @@ public class UserDashboard extends AppCompatActivity
 ///Getting firebase authentication user id from previous activity
         uid=getIntent().getStringExtra("uid");
         phno=getIntent().getStringExtra("phno");
+
         // below code mentioning path in Firebase Database
         childref=myRef.child("Users").child(uid);
 
@@ -89,10 +90,11 @@ public class UserDashboard extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(UserDashboard.this, MapsActivity.class);
-                startActivity(i);
+               /* Intent i = new Intent(UserDashboard.this, MapsActivity.class);
+                startActivity(i);*/
             }
         });
+
         //ui widgets initialisation
         addfrnd = (Button) findViewById(R.id.addfrnd);
         selcon = (TextView) findViewById(R.id.selectedcontact);
@@ -108,7 +110,11 @@ public class UserDashboard extends AppCompatActivity
         // initialising Adapter object
         fa=new FriendlistAdapter(this,mfrnds);
         tv.setAdapter(fa);
+
+        //firebase notification listener
         FirebaseMessaging.getInstance().subscribeToTopic("TRACKO_"+phno);
+        //
+
         DatabaseReference qfrnslist=childref.child("friendslist");
         Query qr= qfrnslist.orderByValue();
         qr.addChildEventListener(new ChildEventListener() {
