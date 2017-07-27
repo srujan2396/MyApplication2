@@ -52,12 +52,12 @@
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-hdpi-v4\\ic_media_pause.png"
     },
     {
-        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_cast_white_36.png",
-        "source": "C:\\Users\\teenhava\\.android\\build-cache\\c96dc4fcbd7faab44cd3022052fd85ef4827346a\\output\\res\\drawable-hdpi-v4\\quantum_ic_cast_white_36.png"
-    },
-    {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_notification_on.png",
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\38fc48768e49eca255da0a092afb892c230c8e68\\output\\res\\drawable-hdpi-v4\\cast_ic_notification_on.png"
+    },
+    {
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_cast_white_36.png",
+        "source": "C:\\Users\\teenhava\\.android\\build-cache\\c96dc4fcbd7faab44cd3022052fd85ef4827346a\\output\\res\\drawable-hdpi-v4\\quantum_ic_cast_white_36.png"
     },
     {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\design_ic_visibility_off.png",

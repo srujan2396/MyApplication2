@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     GoogleApiClient mGoogleApiClient;
     int RC_SIGN_IN = 9001;
     SignInButton gsign;
-    String phno;
+    String phno,displayname,email,photourl,uid;
     public static final int REQUEST_LOCATION_CODE = 99;
     public static final int REQUEST_READ_CONTACTS = 79;
     public static final int REQUEST_PHONE_STATE= 89;
-
+    int l=0,c=0,p=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -91,51 +91,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
-
+                    displayname=user.getDisplayName();
+                    email=user.getEmail();
+                    uid=user.getUid();
+                    photourl=user.getPhotoUrl().toString();
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                     Toast.makeText(MainActivity.this, "Already Signed in", Toast.LENGTH_SHORT).show();
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         checkLocationPermission();
                     }
-                    try {
-                        TelephonyManager tMgr = (TelephonyManager) MainActivity.this.getSystemService(Context.TELEPHONY_SERVICE);
-                        String mPhoneNumber = tMgr.getLine1Number();
-                        String n = mPhoneNumber.replaceAll("[()\\s-]+", "").trim();
-                        if (n.length() == 10) {
 
-                            phno = n;
-                            // FirebaseMessaging.getInstance().subscribeToTopic(n);
-                            //jhjvjhv,jh
-
-                        } else if (n.length() > 10) {
-                            if (n.length() == 11) {
-                                String num = n.substring(1);
-                                phno = num;
-
-                            } else if (n.length() == 12) {
-                                String num = n.substring(2);
-
-                                phno = num;
-
-                            } else if (n.length() == 13) {
-                                String num = n.substring(3);
-
-                                phno = num;
-
-                            }
-                        }
-
-                        Intent i = new Intent(MainActivity.this, UserDashboard.class);
-
-                        i.putExtra("name", user.getDisplayName());
-                        i.putExtra("email", user.getEmail());
-                        i.putExtra("photourl", user.getPhotoUrl().toString());
-
-                        i.putExtra("phno", phno);
-                        i.putExtra("uid", user.getUid());
-                        startActivity(i);
-                        finish();
-                    }catch(NullPointerException ne){ ne.printStackTrace();}
 
                 } else {
                     // User is signed out
@@ -158,8 +123,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public boolean checkLocationPermission(){
-        if(ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED){
+        if(ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED){
+
             if(ActivityCompat.shouldShowRequestPermissionRationale(this, android.Manifest.permission.ACCESS_FINE_LOCATION)){
+
                 ActivityCompat.requestPermissions(this,new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},REQUEST_LOCATION_CODE);
             }
             else{
@@ -172,14 +139,58 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_CONTACTS},REQUEST_READ_CONTACTS);
             }
             if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.READ_PHONE_STATE)){
+
                 ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_PHONE_STATE},REQUEST_PHONE_STATE);
+
             }
             else{
                 ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_PHONE_STATE},REQUEST_PHONE_STATE);
+
             }
             return false;
-        }else{
-            return true;}
+        } else{
+            try {
+                TelephonyManager tMgr = (TelephonyManager) MainActivity.this.getSystemService(Context.TELEPHONY_SERVICE);
+                String mPhoneNumber = tMgr.getLine1Number();
+                String n = mPhoneNumber.replaceAll("[()\\s-]+", "").trim();
+                if (n.length() == 10) {
+
+                    phno = n;
+                    // FirebaseMessaging.getInstance().subscribeToTopic(n);
+                    //jhjvjhv,jh
+
+                } else if (n.length() > 10) {
+                    if (n.length() == 11) {
+                        String num = n.substring(1);
+                        phno = num;
+
+                    } else if (n.length() == 12) {
+                        String num = n.substring(2);
+
+                        phno = num;
+
+                    } else if (n.length() == 13) {
+                        String num = n.substring(3);
+
+                        phno = num;
+
+                    }
+                }
+
+                Intent i = new Intent(MainActivity.this, UserDashboard.class);
+
+                i.putExtra("name", displayname);
+                i.putExtra("email", email);
+                i.putExtra("photourl", photourl);
+
+                i.putExtra("phno", phno);
+                i.putExtra("uid", uid);
+                startActivity(i);
+                finish();
+            }catch(NullPointerException ne){ ne.printStackTrace();}
+            return true;
+
+        }
 
     }
 
@@ -207,18 +218,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case REQUEST_LOCATION_CODE:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                       l=1;
+                        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_CONTACTS},REQUEST_READ_CONTACTS);
 
                     } else {
                         Toast.makeText(this, "her please give Permission", Toast.LENGTH_SHORT).show();
+                        ActivityCompat.requestPermissions(this,new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},REQUEST_LOCATION_CODE);
                     }
                 }
                 break;
             case REQUEST_READ_CONTACTS:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
-
+                        c=1;
+                        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_PHONE_STATE},REQUEST_PHONE_STATE);
                     } else {
                         Toast.makeText(this, "her please give Permission", Toast.LENGTH_SHORT).show();
+                        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_CONTACTS},REQUEST_READ_CONTACTS);
                     }
                 }
                 break;
@@ -226,14 +242,59 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED){
+                       p=1;
+                    if(p==1&&c==1&&l==1){
+                        try {
+                            TelephonyManager tMgr = (TelephonyManager) MainActivity.this.getSystemService(Context.TELEPHONY_SERVICE);
+                            String mPhoneNumber = tMgr.getLine1Number();
+                            String n = mPhoneNumber.replaceAll("[()\\s-]+", "").trim();
+                            if (n.length() == 10) {
 
+                                phno = n;
+                                // FirebaseMessaging.getInstance().subscribeToTopic(n);
+                                //jhjvjhv,jh
+
+                            } else if (n.length() > 10) {
+                                if (n.length() == 11) {
+                                    String num = n.substring(1);
+                                    phno = num;
+
+                                } else if (n.length() == 12) {
+                                    String num = n.substring(2);
+
+                                    phno = num;
+
+                                } else if (n.length() == 13) {
+                                    String num = n.substring(3);
+
+                                    phno = num;
+
+                                }
+                            }
+
+                            Intent i = new Intent(MainActivity.this, UserDashboard.class);
+
+                            i.putExtra("name", displayname);
+                            i.putExtra("email", email);
+                            i.putExtra("photourl", photourl);
+
+                            i.putExtra("phno", phno);
+                            i.putExtra("uid", uid);
+                            startActivity(i);
+                            finish();
+                        }catch(NullPointerException ne){ ne.printStackTrace();}
+                    }
                 } else {
                     Toast.makeText(this, "her please give Permission", Toast.LENGTH_SHORT).show();
+                    ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_PHONE_STATE},REQUEST_PHONE_STATE);
+
                 }
             }
             break;
 
         }
+     // if(requestCode==REQUEST_LOCATION_CODE){}
+
     }
 
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
@@ -253,20 +314,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             // If sign in fails, display a message to the user. If sign in succeeds
                             // the auth state listener will be notified and logic to handle the
                             // signed in user can be handled in the listener.
-
-                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-
-                                checkLocationPermission();
-
-                            }
-
-                            Intent i = new Intent(MainActivity.this, UserDashboard.class);
-
-                            i.putExtra("name",user.getDisplayName());
-                            i.putExtra("email",user.getEmail());
-                           // i.putExtra("photourl",user.getPhotoUrl());
-                            i.putExtra("uid",user.getUid());
-
                             SharedPreferences.Editor editor = sharedPreferences.edit();
                             editor.putString("name",user.getDisplayName());
                             editor.putString("email",user.getEmail());
@@ -279,7 +326,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             String user_name= user.getDisplayName();
                             String user_email= user.getEmail();
                             String photourl= user.getPhotoUrl().toString();
-                            String user_phno=getIntent().getStringExtra("phno");
+                          //  String user_phno=getIntent().getStringExtra("phno");
 
 
                             HashMap<String,String> store_userpro=new HashMap<String,String>();
@@ -291,7 +338,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             childref.setValue(store_userpro);
                             Toast.makeText(MainActivity.this, "Authentication sucess",
                                     Toast.LENGTH_SHORT).show();
-                            startActivity(i);
+                            displayname=user.getDisplayName();
+                            email=user.getEmail();
+                            uid=user.getUid();
+                            photourl=user.getPhotoUrl().toString();
+
+
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
+                                checkLocationPermission();
+
+                            }
+
+                     /*       Intent i = new Intent(MainActivity.this, UserDashboard.class);
+
+                            i.putExtra("name",user.getDisplayName());
+                            i.putExtra("email",user.getEmail());
+                           // i.putExtra("photourl",user.getPhotoUrl());
+                            i.putExtra("uid",user.getUid());
+
+
+                            startActivity(i);*/
 
                             // updateUI(user);
                         } else {

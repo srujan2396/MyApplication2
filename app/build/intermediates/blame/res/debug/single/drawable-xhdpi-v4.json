@@ -84,24 +84,24 @@
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\09db6d461b22a498e296ec8f23f7e1f6ba4fd3d4\\output\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_connecting_14_light.png",
-        "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_connecting_14_light.png"
-    },
-    {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_on_14_light.png",
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_on_14_light.png"
     },
     {
-        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_pause_white_24.png",
-        "source": "C:\\Users\\teenhava\\.android\\build-cache\\c96dc4fcbd7faab44cd3022052fd85ef4827346a\\output\\res\\drawable-xhdpi-v4\\quantum_ic_pause_white_24.png"
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_connecting_14_light.png",
+        "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_connecting_14_light.png"
+    },
+    {
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_skip_previous_white_24.png",
+        "source": "C:\\Users\\teenhava\\.android\\build-cache\\c96dc4fcbd7faab44cd3022052fd85ef4827346a\\output\\res\\drawable-xhdpi-v4\\quantum_ic_skip_previous_white_24.png"
     },
     {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_skip_next_grey600_36.png",
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\c96dc4fcbd7faab44cd3022052fd85ef4827346a\\output\\res\\drawable-xhdpi-v4\\quantum_ic_skip_next_grey600_36.png"
     },
     {
-        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_skip_previous_white_24.png",
-        "source": "C:\\Users\\teenhava\\.android\\build-cache\\c96dc4fcbd7faab44cd3022052fd85ef4827346a\\output\\res\\drawable-xhdpi-v4\\quantum_ic_skip_previous_white_24.png"
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_pause_white_24.png",
+        "source": "C:\\Users\\teenhava\\.android\\build-cache\\c96dc4fcbd7faab44cd3022052fd85ef4827346a\\output\\res\\drawable-xhdpi-v4\\quantum_ic_pause_white_24.png"
     },
     {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_on_13_dark.png",
@@ -112,12 +112,12 @@
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_connecting_05_light.png"
     },
     {
-        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_on_19_light.png",
-        "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_on_19_light.png"
-    },
-    {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_stop_white_24.png",
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\c96dc4fcbd7faab44cd3022052fd85ef4827346a\\output\\res\\drawable-xhdpi-v4\\quantum_ic_stop_white_24.png"
+    },
+    {
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_on_19_light.png",
+        "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_on_19_light.png"
     },
     {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_refresh_white_24.png",
@@ -136,12 +136,12 @@
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_on_05_dark.png"
     },
     {
-        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_connecting_15_light.png",
-        "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_connecting_15_light.png"
-    },
-    {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_forward_10_white_24.png",
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\c96dc4fcbd7faab44cd3022052fd85ef4827346a\\output\\res\\drawable-xhdpi-v4\\quantum_ic_forward_10_white_24.png"
+    },
+    {
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_connecting_15_light.png",
+        "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_connecting_15_light.png"
     },
     {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_replay_30_white_36.png",
@@ -172,12 +172,12 @@
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\a538eb7b1b5a5339df64d0de056cd92740ec1d73\\output\\res\\drawable-xhdpi-v4\\ic_plusone_medium_off_client.png"
     },
     {
-        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "C:\\Users\\teenhava\\.android\\build-cache\\09db6d461b22a498e296ec8f23f7e1f6ba4fd3d4\\output\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_connecting_00_dark.png",
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_connecting_00_dark.png"
+    },
+    {
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\teenhava\\.android\\build-cache\\09db6d461b22a498e296ec8f23f7e1f6ba4fd3d4\\output\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_on_02_dark.png",
@@ -276,12 +276,12 @@
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_cast_dark.png"
     },
     {
-        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_connecting_16_light.png",
-        "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_connecting_16_light.png"
-    },
-    {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_on_12_light.png",
         "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_on_12_light.png"
+    },
+    {
+        "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_media_route_connecting_16_light.png",
+        "source": "C:\\Users\\teenhava\\.android\\build-cache\\13a12c215f05a6ab74cceb17ba00aebf0eb2e652\\output\\res\\drawable-xhdpi-v4\\ic_media_route_connecting_16_light.png"
     },
     {
         "merged": "C:\\New folder\\harsha backup\\harsha projects\\srjanpro\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",

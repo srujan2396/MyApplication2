@@ -112,8 +112,6 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\teenhava\.andro
 		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:18:9-41
 	android:supportsRtl
 		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:20:9-35
-	android:roundIcon
-		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:19:9-54
 	android:allowBackup
 		ADDED from C:\New folder\harsha backup\harsha projects\srjanpro\MyApplication2\app\src\main\AndroidManifest.xml:16:9-35
 	android:icon
