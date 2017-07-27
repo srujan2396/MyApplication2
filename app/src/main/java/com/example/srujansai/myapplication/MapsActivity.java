@@ -466,8 +466,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
         mMap.setOnMyLocationButtonClickListener(this);
         googleMap.setPadding(0, 0, 30, 105);
-        enableMyLocation();
 
+        enableMyLocation();
         mPolylineOptions = new PolylineOptions();
         mPolylineOptions.color(Color.BLUE).width(10);
 
@@ -481,29 +481,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Log.d("Camera postion change" + "", cameraPosition + "");
                 mCenterLatLong = cameraPosition.target;
 
-
-         /*       mMap.clear();
-
-                try {
-
-                    Location mLocation = new Location("");
-                    mLocation.setLatitude(mCenterLatLong.latitude);
-                    mLocation.setLongitude(mCenterLatLong.longitude);
-
-                    startIntentService(mLocation);
-                    // mLocationMarkerText.setText("Lat : " + mCenterLatLong.latitude + "," + "Long : " + mCenterLatLong.longitude);
-                    pickuplatlng = mCenterLatLong;
-                  *//*  mLocationMarkerText.setText("Book Now");
-                    mLocationMarkerText.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            nextok();
-                        }
-                    });
-*//*
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }*/
             }
         });
 
@@ -772,8 +749,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
 public static Intent makeNotificationIntent(Context applicationContext, String msg) {
-  applicationContext  =applicationContext;
-    return null;
+   Intent intent = new Intent(applicationContext,MapsActivity.class);
+    intent.putExtra("NOTIFICATION MSGl",msg);
+    return intent;
 }
 
 }
