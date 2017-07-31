@@ -33,6 +33,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 
@@ -81,8 +82,8 @@ public class UserDashboard extends AppCompatActivity
 ///Getting firebase authentication user id from previous activity
         uid=getIntent().getStringExtra("uid");
         phno=getIntent().getStringExtra("phno");
-
-        // below code mentioning path in Firebase Database
+       // String pno=sharedPreferences.getString("")
+              // below code mentioning path in Firebase Database
         childref=myRef.child("Users").child(uid);
 
 
@@ -113,11 +114,33 @@ public class UserDashboard extends AppCompatActivity
 
         //firebase notification listener
         FirebaseMessaging.getInstance().subscribeToTopic("TRACKO_"+phno);
+        System.out.println("TRACKO_"+phno);
         //
 
         DatabaseReference qfrnslist=childref.child("friendslist");
-        Query qr= qfrnslist.orderByValue();
-        qr.addChildEventListener(new ChildEventListener() {
+        Query qr= qfrnslist.orderByKey();
+        qr.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                mfrnds.clear();
+                fa.notifyDataSetChanged();
+                for (DataSnapshot dp : dataSnapshot.getChildren()) {
+                    String fname = dp.child("fname").getValue(String.class);
+                    String fphno = dp.child("phno").getValue(String.class);
+                    String status = dp.child("status").getValue(String.class);
+                    Friend f = new Friend(fname, fphno, status, phno);
+                    mfrnds.add(f);
+                    fa.notifyDataSetChanged();
+                    System.out.println("uid: " + uid + " name :" + fname + " phno: " + " status: " + status);
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+       /* qr.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 String fname=dataSnapshot.child("fname").getValue(String.class);
@@ -148,24 +171,8 @@ public class UserDashboard extends AppCompatActivity
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
-/*        qr.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String fname=dataSnapshot.child("fname").getValue(String.class);
-                String phno=dataSnapshot.child("phno").getValue(String.class);
-                String status=dataSnapshot.child("status").getValue(String.class);
-                Friend f= new Friend(fname,phno,status);
-                mfrnds.add(f);
-                fa.notifyDataSetChanged();
-                System.out.println("uid: "+uid+" name :"+fname+" phno: "+" status: "+status);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
         });*/
+
 
 
 
@@ -248,7 +255,7 @@ public class UserDashboard extends AppCompatActivity
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {
-            Toast.makeText(UserDashboard.this,"OnResult fragment called",Toast.LENGTH_LONG).show();
+          //  Toast.makeText(UserDashboard.this,"OnResult fragment called",Toast.LENGTH_LONG).show();
             Uri contactData=ContactsContract.CommonDataKinds.Phone.CONTENT_URI;
             if(data!=null) {
                 contactData = data.getData();
@@ -315,7 +322,7 @@ public class UserDashboard extends AppCompatActivity
       String n=number.replaceAll("[()\\s-]+", "").trim();
         if(n.length()==10){
             String status="pending";
-        selcon.setText("name :"+name+"\nPhone: "+n+"\nEmail:"+email);
+        selcon.setText("Welcome To TRACKO Realtime Location Sharing \n Selected Contact Details: \n name :"+name+"\nPhone: "+n+"\nEmail:"+email);
             HashMap<String,String> friendslist=new HashMap<String,String>();
             friendslist.put("fname",name);
             friendslist.put("phno",n);
@@ -323,7 +330,10 @@ public class UserDashboard extends AppCompatActivity
             frnref=childref.child("friendslist").child(n);
             frnref.setValue(friendslist);
             Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
-
+            friendslist.put("message","Location Request From TRACKO "+n);
+            DatabaseReference nr=myRef.child("notificatiorequests").push();
+            nr.setValue(friendslist);
+            Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
            /* FirebaseMessaging fm = FirebaseMessaging.getInstance();
             AtomicInteger msgId=new AtomicInteger();;
             fm.send(new RemoteMessage.Builder(number)
@@ -337,35 +347,39 @@ public class UserDashboard extends AppCompatActivity
             if (n.length() == 11) {
                 String num = n.substring(1);
                 String status="pending";
-                selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
+                selcon.setText("Welcome To TRACKO Realtime Location Sharing \n Selected Contact Details: \n name :"+name+"\nPhone: "+n+"\nEmail:"+email);
                 HashMap<String, String> friendslist = new HashMap<String, String>();
                 friendslist.put("fname", name);
                 friendslist.put("phno", num);
                 friendslist.put("status", status);
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);
-                Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
+
+                friendslist.put("message","Location Request From TRACKO "+num);
                 DatabaseReference nr=myRef.child("notificatiorequests").push();
                 nr.setValue(friendslist);
+                Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
 
             } else if (n.length() == 12) {
                 String num = n.substring(2);
                 String status="pending";
-                selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
+                selcon.setText("Welcome To TRACKO Realtime Location Sharing \n Selected Contact Details: \n name :"+name+"\nPhone: "+n+"\nEmail:"+email);
                 HashMap<String, String> friendslist = new HashMap<String, String>();
                 friendslist.put("fname", name);
                 friendslist.put("phno", num);
                 friendslist.put("status", status);
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);
-                Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
+                
+                friendslist.put("message","Location Request From TRACKO "+num);
                 DatabaseReference nr=myRef.child("notificatiorequests").push();
                 nr.setValue(friendslist);
+                Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
 
             } else if (n.length() == 13) {
                 String num = n.substring(3);
                 String status="pending";
-                selcon.setText("name :" + name + "\nPhone: " + n + "\nEmail:" + email);
+                selcon.setText("Welcome To TRACKO Realtime Location Sharing \n Selected Contact Details: \n name :"+name+"\nPhone: "+n+"\nEmail:"+email);
                 HashMap<String, String> friendslist = new HashMap<String, String>();
                 friendslist.put("fname", name);
                 friendslist.put("phno", num);
@@ -373,6 +387,7 @@ public class UserDashboard extends AppCompatActivity
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);
                 Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
+                friendslist.put("message","Location Request From TRACKO "+num);
                 DatabaseReference nr=myRef.child("notificatiorequests").push();
                 nr.setValue(friendslist);
 

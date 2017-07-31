@@ -104,6 +104,14 @@
         </service>
         <service android:name="com.example.srujansai.myapplication.FetchAddressIntentService" >
         </service>
+
+        <activity android:name="com.example.srujansai.myapplication.RequestActivity" >
+            <intent-filter>
+                <action android:name="com.example.srujansai.myapplication_TARGET_REQUEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
