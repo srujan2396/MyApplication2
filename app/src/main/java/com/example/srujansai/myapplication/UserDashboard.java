@@ -127,7 +127,7 @@ public class UserDashboard extends AppCompatActivity
                 fa.notifyDataSetChanged();
                 for (DataSnapshot dp : dataSnapshot.getChildren()) {
                     String fname = dp.child("fname").getValue(String.class);
-                    String fphno = dp.child("phno").getValue(String.class);
+                    String fphno = dp.child("fphno").getValue(String.class);
                     String status = dp.child("status").getValue(String.class);
                     Friend f = new Friend(fname, fphno, status, phno);
                     mfrnds.add(f);
@@ -326,14 +326,15 @@ public class UserDashboard extends AppCompatActivity
         selcon.setText("Welcome To TRACKO Realtime Location Sharing \n Selected Contact Details: \n name :"+name+"\nPhone: "+n+"\nEmail:"+email);
             HashMap<String,String> friendslist=new HashMap<String,String>();
             friendslist.put("fname",name);
-            friendslist.put("phno",n);
+            friendslist.put("fphno",n);
+            friendslist.put("selfname",displayname);
+            friendslist.put("selfphone",phno);
             friendslist.put("status",status);
             frnref=childref.child("friendslist").child(n);
             frnref.setValue(friendslist);
             Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
             friendslist.put("message","Location Request From TRACKO "+n);
-            friendslist.put("fromphno",phno);
-            friendslist.put("name",displayname);
+
             DatabaseReference nr=myRef.child("notificatiorequests").push();
             nr.setValue(friendslist);
             Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
@@ -353,7 +354,9 @@ public class UserDashboard extends AppCompatActivity
                 selcon.setText("Welcome To TRACKO Realtime Location Sharing \n Selected Contact Details: \n name :"+name+"\nPhone: "+n+"\nEmail:"+email);
                 HashMap<String, String> friendslist = new HashMap<String, String>();
                 friendslist.put("fname", name);
-                friendslist.put("phno", num);
+                friendslist.put("fphno", num);
+                friendslist.put("selfname",displayname);
+                friendslist.put("selfphone",phno);
                 friendslist.put("status", status);
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);
@@ -369,7 +372,9 @@ public class UserDashboard extends AppCompatActivity
                 selcon.setText("Welcome To TRACKO Realtime Location Sharing \n Selected Contact Details: \n name :"+name+"\nPhone: "+n+"\nEmail:"+email);
                 HashMap<String, String> friendslist = new HashMap<String, String>();
                 friendslist.put("fname", name);
-                friendslist.put("phno", num);
+                friendslist.put("fphno", num);
+                friendslist.put("selfname",displayname);
+                friendslist.put("selfphone",phno);
                 friendslist.put("status", status);
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);
@@ -385,7 +390,9 @@ public class UserDashboard extends AppCompatActivity
                 selcon.setText("Welcome To TRACKO Realtime Location Sharing \n Selected Contact Details: \n name :"+name+"\nPhone: "+n+"\nEmail:"+email);
                 HashMap<String, String> friendslist = new HashMap<String, String>();
                 friendslist.put("fname", name);
-                friendslist.put("phno", num);
+                friendslist.put("fphno", num);
+                friendslist.put("selfname",displayname);
+                friendslist.put("selfphone",phno);
                 friendslist.put("status", status);
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);

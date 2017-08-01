@@ -85,7 +85,7 @@ public class GeofenceTrasitionService extends IntentService {
 
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
         stackBuilder.addParentStack(MapsActivity.class);
-      //  stackBuilder.addNextIntent(notificationIntent);
+       stackBuilder.addNextIntent(notificationIntent);
         PendingIntent notificationPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
 
         // Creating and sending Notification

@@ -103,12 +103,93 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         SharedPreferences sharedpreferences = getSharedPreferences("mypreference", Context.MODE_PRIVATE);
 
                         phno = sharedpreferences.getString("phno", null);
-                        if (phno.length() == 10) {
+                        if (phno!=null) {
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                                 checkLocationPermission();
                             }
                         } else {
                             Toast.makeText(MainActivity.this, "Please enter Your Phno:  click sign in button ", Toast.LENGTH_SHORT).show();
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                                checkLocationPermission();
+                            }
+                            final FirebaseUser user1 = mAuth.getCurrentUser();
+                            // Create custom dialog object
+                            final Dialog dialog = new Dialog(MainActivity.this);
+                            // Include dialog.xml file
+                            dialog.setContentView(R.layout.enterphno);
+                            // Set dialog title
+                            dialog.setTitle("Custom Dialog");
+
+                            // set values for custom dialog components - text, image and button
+                            final  EditText text = (EditText) dialog.findViewById(R.id.editText);
+
+                            dialog.show();
+
+                            Button okButton = (Button) dialog.findViewById(R.id.button2);
+                            // if decline button is clicked, close the custom dialog
+                            okButton.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    // Close dialog
+                                    if(text.length()==10){
+                                        phno=text.getText().toString();
+                                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                                        editor.putString("name",user1.getDisplayName());
+                                        editor.putString("email",user1.getEmail());
+                                        editor.putString("uid",user1.getUid());
+                                        editor.putString("photourl",user1.getPhotoUrl().toString());
+                                        editor.putString("phno",phno);
+                                        editor.commit();
+
+
+                                        FirebaseDatabase  database = FirebaseDatabase.getInstance();
+                                        DatabaseReference myRef = database.getReference();
+                                        String user_name= user1.getDisplayName();
+                                        String user_email= user1.getEmail();
+                                        String photourl= user1.getPhotoUrl().toString();
+                                        //  String user_phno=getIntent().getStringExtra("phno");
+
+
+                                        HashMap<String,String> store_userpro=new HashMap<String,String>();
+                                        store_userpro.put("name",user_name);
+                                        store_userpro.put("email",user_email);
+                                        store_userpro.put("photourl",photourl);
+                                        store_userpro.put("phno",phno);
+                                        DatabaseReference childref= myRef.child("Users").child(user1.getUid());
+                                        childref.setValue(store_userpro);
+                                        Toast.makeText(MainActivity.this, "Authentication sucess",
+                                                Toast.LENGTH_SHORT).show();
+                                        displayname=user1.getDisplayName();
+                                        email=user1.getEmail();
+                                        uid=user1.getUid();
+                                        photourl=user1.getPhotoUrl().toString();
+
+
+                                        Intent i = new Intent(MainActivity.this, UserDashboard.class);
+                                        i.putExtra("name", displayname);
+                                        i.putExtra("email", email);
+                                        i.putExtra("photourl", photourl);
+                                        i.putExtra("phno", phno);
+                                        i.putExtra("uid", uid);
+                                        startActivity(i);
+                                        finish();
+                                        dialog.dismiss();
+
+                                    }else{
+
+                                        Toast.makeText(MainActivity.this, "Please Enter valid 10 digits Phone number", Toast.LENGTH_SHORT).show();
+                                        FirebaseAuth.getInstance().signOut();
+                                        finish();
+                                        dialog.dismiss();
+
+                                    }
+
+
+                                }
+                            });
+
+
+
                         }
 
 
@@ -162,21 +243,107 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return false;
         } else{
             try {
+                if (phno.length() == 10) {
+                    FirebaseUser user = mAuth.getCurrentUser();
+                    displayname=user.getDisplayName();
+                    email=user.getEmail();
+                    uid=user.getUid();
+                    photourl=user.getPhotoUrl().toString();
 
-                FirebaseUser user = mAuth.getCurrentUser();
-                displayname=user.getDisplayName();
-                email=user.getEmail();
-                uid=user.getUid();
-                photourl=user.getPhotoUrl().toString();
 
-                Intent i = new Intent(MainActivity.this, UserDashboard.class);
-                i.putExtra("name", displayname);
-                i.putExtra("email", email);
-                i.putExtra("photourl", photourl);
-                i.putExtra("phno", phno);
-                i.putExtra("uid", uid);
-                startActivity(i);
-                finish();
+                    Intent i = new Intent(MainActivity.this, UserDashboard.class);
+                    i.putExtra("name", displayname);
+                    i.putExtra("email", email);
+                    i.putExtra("photourl", photourl);
+                    i.putExtra("phno", phno);
+                    i.putExtra("uid", uid);
+                    startActivity(i);
+                    finish();
+                } else {
+                    Toast.makeText(MainActivity.this, "Please enter Your Phno:  click sign in button ", Toast.LENGTH_SHORT).show();
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        checkLocationPermission();
+                    }
+                    final FirebaseUser user1 = mAuth.getCurrentUser();
+                    // Create custom dialog object
+                    final Dialog dialog = new Dialog(MainActivity.this);
+                    // Include dialog.xml file
+                    dialog.setContentView(R.layout.enterphno);
+                    // Set dialog title
+                    dialog.setTitle("Custom Dialog");
+
+                    // set values for custom dialog components - text, image and button
+                    final  EditText text = (EditText) dialog.findViewById(R.id.editText);
+
+                    dialog.show();
+
+                    Button okButton = (Button) dialog.findViewById(R.id.button2);
+                    // if decline button is clicked, close the custom dialog
+                    okButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            // Close dialog
+                            if(text.length()==10){
+                                phno=text.getText().toString();
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+                                editor.putString("name",user1.getDisplayName());
+                                editor.putString("email",user1.getEmail());
+                                editor.putString("uid",user1.getUid());
+                                editor.putString("photourl",user1.getPhotoUrl().toString());
+                                editor.putString("phno",phno);
+                                editor.commit();
+
+
+                                FirebaseDatabase  database = FirebaseDatabase.getInstance();
+                                DatabaseReference myRef = database.getReference();
+                                String user_name= user1.getDisplayName();
+                                String user_email= user1.getEmail();
+                                String photourl= user1.getPhotoUrl().toString();
+                                //  String user_phno=getIntent().getStringExtra("phno");
+
+
+                                HashMap<String,String> store_userpro=new HashMap<String,String>();
+                                store_userpro.put("name",user_name);
+                                store_userpro.put("email",user_email);
+                                store_userpro.put("photourl",photourl);
+                                store_userpro.put("phno",phno);
+                                DatabaseReference childref= myRef.child("Users").child(user1.getUid());
+                                childref.setValue(store_userpro);
+                                Toast.makeText(MainActivity.this, "Authentication sucess",
+                                        Toast.LENGTH_SHORT).show();
+                                displayname=user1.getDisplayName();
+                                email=user1.getEmail();
+                                uid=user1.getUid();
+                                photourl=user1.getPhotoUrl().toString();
+
+
+                                Intent i = new Intent(MainActivity.this, UserDashboard.class);
+                                i.putExtra("name", displayname);
+                                i.putExtra("email", email);
+                                i.putExtra("photourl", photourl);
+                                i.putExtra("phno", phno);
+                                i.putExtra("uid", uid);
+                                startActivity(i);
+                                finish();
+                                dialog.dismiss();
+
+                            }else{
+
+                                Toast.makeText(MainActivity.this, "Please Enter valid 10 digits Phone number", Toast.LENGTH_SHORT).show();
+                                FirebaseAuth.getInstance().signOut();
+                                finish();
+                                dialog.dismiss();
+
+                            }
+
+
+                        }
+                    });
+
+
+
+                }
+
 
             }catch(NullPointerException ne){ ne.printStackTrace();
             System.out.println("no user data");}

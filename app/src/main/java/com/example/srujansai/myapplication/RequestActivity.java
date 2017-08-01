@@ -49,8 +49,6 @@ public class RequestActivity extends AppCompatActivity implements View.OnClickLi
         System.out.println("USER ID "+uid+"  Phone:"+phno);
 
         childref=myRef.child("Users").child(uid).child("friendslist").child(phno);
-
-
     }
 
     @Override
@@ -58,22 +56,32 @@ public class RequestActivity extends AppCompatActivity implements View.OnClickLi
         switch (v.getId()){
             case R.id.act:
                 String msg="accept";
-                updateinfriendlist(phno,msg);
+                updateinfriendlist(fromname,fromphno,phno,msg);
                 break;
             case R.id.rej:
                 String msg1="reject";
-                updateinfriendlist(phno,msg1);
+                updateinfriendlist(fromname,fromphno,phno,msg1);
                 break;
         }
     }
 
-    private void updateinfriendlist(String phno, String msg) {
+    private void updateinfriendlist(String fromname,String fromphno,String phno, String msg) {
         HashMap<String,String> friendslist=new HashMap<String,String>();
-        friendslist.put("fname",name);
-        friendslist.put("phno",phno);
+        friendslist.put("fname",fromname);
+        friendslist.put("fphno",fromphno);
+        friendslist.put("selfname",name);
+        friendslist.put("selfphno",selfphno);
         friendslist.put("status",msg);
         childref.setValue(friendslist);
+        System.out.println("fromname:"+fromname+" fromphno:"+fromphno);
         Toast.makeText(this, "updated in friends list", Toast.LENGTH_SHORT).show();
+        friendslist.put("message","Location Request From TRACKO "+fromphno);
+        DatabaseReference nr=myRef.child("acceptrequests").push();
+        nr.setValue(friendslist);
+
+
+
         finish();
+
     }
 }
