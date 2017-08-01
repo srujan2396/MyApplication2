@@ -64,7 +64,7 @@ public class UserDashboard extends AppCompatActivity
     private static final int CONTACT_PICKER_RESULT = 1001;
     private static final String DEBUG_TAG = "Contact List";
     private static final int RESULT_OK = -1;
-    String name,email,photo_url,uid,phno;
+    String displayname,email,photo_url,uid,phno;
     DatabaseReference myRef,childref,frnref;
     FirebaseDatabase database;
     @Override
@@ -82,6 +82,7 @@ public class UserDashboard extends AppCompatActivity
 ///Getting firebase authentication user id from previous activity
         uid=getIntent().getStringExtra("uid");
         phno=getIntent().getStringExtra("phno");
+        displayname=getIntent().getStringExtra("name");
        // String pno=sharedPreferences.getString("")
               // below code mentioning path in Firebase Database
         childref=myRef.child("Users").child(uid);
@@ -331,6 +332,8 @@ public class UserDashboard extends AppCompatActivity
             frnref.setValue(friendslist);
             Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
             friendslist.put("message","Location Request From TRACKO "+n);
+            friendslist.put("fromphno",phno);
+            friendslist.put("name",displayname);
             DatabaseReference nr=myRef.child("notificatiorequests").push();
             nr.setValue(friendslist);
             Toast.makeText(this, "updated in firebase list", Toast.LENGTH_SHORT).show();
@@ -370,7 +373,7 @@ public class UserDashboard extends AppCompatActivity
                 friendslist.put("status", status);
                 frnref = childref.child("friendslist").child(num);
                 frnref.setValue(friendslist);
-                
+
                 friendslist.put("message","Location Request From TRACKO "+num);
                 DatabaseReference nr=myRef.child("notificatiorequests").push();
                 nr.setValue(friendslist);

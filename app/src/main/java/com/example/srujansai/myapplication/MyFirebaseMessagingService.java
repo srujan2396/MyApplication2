@@ -34,7 +34,16 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // Check if message contains a data payload.
         if (remoteMessage.getData().size() > 0) {
             Log.d(TAG, "Message data payload: " + remoteMessage.getData());
+            String title = remoteMessage.getData().get("title");
+            String icon= remoteMessage.getData().get("icon");
+            String body=remoteMessage.getData().get("body");
+            String click_action=remoteMessage.getData().get("click_action");
+            String phno=remoteMessage.getData().get("phno");
+            String name=remoteMessage.getData().get("name");
+            String fromname=remoteMessage.getData().get("fromname");
+            String fromphno= remoteMessage.getData().get("fromphno");
 
+            sendNotification(title,icon,body,click_action,phno,name,fromname,fromphno);
 
             if (/* Check if data needs to be processed by long running job */ true) {
            //     // For long-running tasks (10 seconds or more) use Firebase Job Dispatcher.
@@ -70,5 +79,29 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         // Also if you intend on generating your own notifications as a result of a received FCM
         // m
+    }
+
+    private void sendNotification(String title, String icon, String body, String click_action, String phno, String name,String fromname,String fromphno) {
+        Intent intent = new Intent(this, RequestActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("title", title);
+        intent.putExtra("icon", icon);
+        intent.putExtra("body", body);
+        intent.putExtra("phno", phno);
+        intent.putExtra("name",name);
+        intent.putExtra("fromname",fromname);
+        intent.putExtra("fromphno",fromphno);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
+                PendingIntent.FLAG_ONE_SHOT);
+        Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        NotificationCompat.Builder notificationBuilder= new NotificationCompat.Builder(this);
+        notificationBuilder.setContentTitle(title);
+        notificationBuilder.setContentText(body);
+        notificationBuilder.setSmallIcon(R.drawable.ic_action_locatio);
+        notificationBuilder.setSound(defaultSoundUri);
+        notificationBuilder.setAutoCancel(true);
+        notificationBuilder.setContentIntent(pendingIntent);
+        NotificationManager notificationManager=(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.notify(0,notificationBuilder.build());
     }
 }
