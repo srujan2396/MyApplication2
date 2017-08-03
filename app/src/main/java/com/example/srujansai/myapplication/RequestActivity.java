@@ -48,7 +48,7 @@ public class RequestActivity extends AppCompatActivity implements View.OnClickLi
 
         System.out.println("USER ID "+uid+"  Phone:"+phno);
 
-        childref=myRef.child("Users").child(uid).child("friendslist").child(phno);
+        childref=myRef.child("Users").child(uid).child("friendslist").child(fromphno);
     }
 
     @Override
@@ -78,9 +78,6 @@ public class RequestActivity extends AppCompatActivity implements View.OnClickLi
         friendslist.put("message","Location Request From TRACKO "+fromphno);
         DatabaseReference nr=myRef.child("acceptrequests").push();
         nr.setValue(friendslist);
-
-
-
         finish();
 
     }

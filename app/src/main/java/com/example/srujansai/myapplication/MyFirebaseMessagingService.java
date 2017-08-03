@@ -61,8 +61,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 // Handle message within 10 seconds
               //  handleNow();
             }//
-        }
-            if(remoteMessage.getData().get("notification").equals("false")){
+        }else if(remoteMessage.getData().get("notification").equals("false")){
+                Log.d("Accept dara received","");
                 String fname=remoteMessage.getData().get("fname");
                 String fphno=remoteMessage.getData().get("fphno");
                 String selfname=remoteMessage.getData().get("selfname");
@@ -70,10 +70,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 String status=remoteMessage.getData().get("status");
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 if (user != null) {
-                    DatabaseReference nr = FirebaseDatabase.getInstance().getReference().child("USERS").child(user.getUid()).child("friendslist").child(selfphne);
+                    DatabaseReference nr = FirebaseDatabase.getInstance().getReference().child("Users").child(user.getUid()).child("friendslist").child(selfphne);
                     HashMap<String, String> friendslist = new HashMap<String, String>();
                     friendslist.put("fname", selfname);
-                    friendslist.put("phno", selfphne);
+                    friendslist.put("fphno", selfphne);
                     friendslist.put("status", status);
                     nr.setValue(friendslist);
                     System.out.println("updated in Firebase list");
